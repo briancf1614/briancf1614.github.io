@@ -1,0 +1,73 @@
+<!--template fatto da alessandro(da modificare)--> 
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="author" content="DatUS">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+<body id="background">
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <header id="head">
+            <h1>Risolutore wordle</h1>
+    </header>
+    <div id="conteiner">
+        <form>
+            <table >
+                <tr>
+                    <td class="color green">Lettere verdi:</td>
+                    <td class="letter lala" ><input id="t0" type="text" maxlength="1" autocomplete="off"></td> 
+                    <td class="letter" ><input id="t0" type="text" maxlength="1" autocomplete="off"></td> 
+                    <td class="letter" ><input id="t0" type="text" maxlength="1" autocomplete="off"></td> 
+                    <td class="letter" ><input id="t0" type="text" maxlength="1" autocomplete="off"></td> 
+                    <td class="letter" ><input id="t0" type="text" maxlength="1" autocomplete="off"></td> 
+                </tr>
+                <tr>
+                    <td class="color yellow">Lettere gialle:</td>
+                    <td class="letter" ><input id="t0" type="text" maxlength="1" autocomplete="off"></td> 
+                    <td class="letter" ><input id="t0" type="text" maxlength="1" autocomplete="off"></td> 
+                    <td class="letter" ><input id="t0" type="text" maxlength="1" autocomplete="off"></td> 
+                    <td class="letter" ><input id="t0" type="text" maxlength="1" autocomplete="off"></td> 
+                    <td class="letter" ><input id="t0" type="text" maxlength="1" autocomplete="off"></td> 
+                </tr>
+                <tr>
+                    <td class="color grey">Lettere grigie:</td>
+                    <td class="letter" ><input id="t0" type="text" maxlength="1" autocomplete="off"></td> 
+                    <td class="letter" ><input id="t0" type="text" maxlength="1" autocomplete="off"></td> 
+                    <td class="letter" ><input id="t0" type="text" maxlength="1" autocomplete="off"></td> 
+                    <td class="letter" ><input id="t0" type="text" maxlength="1" autocomplete="off"></td> 
+                    <td class="letter" ><input id="t0" type="text" maxlength="1" autocomplete="off"></td> 
+                </tr>
+            </table>
+            <div class="buttons">
+                <input class="button send" type="submit" value="Conferma ed invia">
+
+                <label class="button view" for="view">Aiuto</label>
+                    <select name="view" id="view"> <!--corregere-->
+                        <optgroup label="esempio 1"></optgroup>
+                        <optgroup label="esempio 2"></optgroup>
+                        <optgroup label="esempio 3"></optgroup>
+                        <optgroup label="esempio 4"></optgroup>
+                        <optgroup label="esempio 5"></optgroup>
+                    </select>
+                <input class="button reset" type="reset" value="Annulla"> <!--controlare che cancelli tutto il processo in backend-->
+            </div>
+        </form>
+
+    </div>
+
+    <div id="footer">
+        <p>probect by DatUS</p>
+        <p>Participanti:</p>
+        <a href="DatUs-solver@DatUs.org">e-mail per contattarci</a><p></p><!--email of DatUs-->
+    </div>
+
+</body>
+
+</html>

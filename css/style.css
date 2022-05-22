@@ -1,0 +1,87 @@
+
+#footer {
+    font-size: 120%;
+	width:max-content;
+    color: white;
+	height: 36px;
+	background-color: rgba(0, 0, 0, 0);
+    float: right;
+    clear: both;
+}
+
+#head {
+    font-size: 300%;
+    color: white;
+    text-align: center;
+    padding-top: 1%;
+    
+}
+
+#conteiner {
+    width: max-content;
+    height: max-content;
+    border-radius:5em;
+	margin: 0 auto; /* per azzerare */
+	padding: 5%; /* per azzerare */
+    background-color: rgb(54, 54, 54);
+    border: 5px;
+}
+
+#background {
+    background-color: rgb(27, 27, 27);
+}
+
+.letter input {
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0);
+    color: #fff;
+    border: solid rgb(192, 192, 192);
+    font-size: 2em;
+    text-transform: uppercase;
+    margin:5%;
+}
+
+table tr td.color {
+    font-size: 300%;
+    
+}
+.color.green {
+    color: rgb(67, 117, 67);
+}
+.color.yellow {
+    color: rgb(192, 192, 100);
+}
+.color.grey {
+    color: grey;
+}
+
+.buttons {
+    margin-top: 5%;
+    text-align: center;
+}
+input.button {
+    margin: 2%;
+    border: solid rgb(192, 192, 192) 5px;
+    font-size: 3em;
+}
+input.send {
+    padding: 1%;
+    background: rgb(67, 117, 67);
+
+}
+label.view {
+    padding: 1%;
+    background:rgb(192, 192, 100);
+    width: max-content;
+    border: solid rgb(192, 192, 192) 5px;
+    font-size: 3em;
+}
+input.reset {
+    padding: 1%;
+    background: rgb(223, 94, 94);
+    display: block;
+    margin: 0 auto;
+}
+  
