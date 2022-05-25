@@ -9,6 +9,22 @@
     clear: both;
 }
 
+#firstWord {
+    color:white;
+    border: 5px solid red;
+    width: 70%;
+    height: 50px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+marquee div:nth-child(-n+7){
+    margin-right: 15%;
+    display:inline-block;
+    color:green;
+    font-size: xx-large;
+}
+
 #head {
     font-size: 300%;
     color: white;
@@ -71,17 +87,25 @@ input.send {
     background: rgb(67, 117, 67);
 
 }
-label.view {
-    padding: 1%;
-    background:rgb(192, 192, 100);
-    width: max-content;
-    border: solid rgb(192, 192, 192) 5px;
-    font-size: 3em;
-}
+
 input.reset {
+    
     padding: 1%;
     background: rgb(223, 94, 94);
-    display: block;
     margin: 0 auto;
 }
-  
+
+div.suggestions table {
+    font-size:800%;
+    text-align: center;
+    color: red;
+    margin: 0 auto;
+}
+div.suggestions {
+    margin-top: 4%;
+    overflow-y: scroll;
+    height:60em;
+}
+
+
+
