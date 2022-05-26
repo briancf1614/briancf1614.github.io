@@ -13,7 +13,7 @@ div#firstWord {
     width: 100%;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 
 marquee div:nth-child(-n+7){
