@@ -6,95 +6,84 @@
     <title>Wordle Solver</title>
     <meta name="description" content="">
     <meta name="author" content="DatUS">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="icon" href="img/icon.png">
 </head>
 <body id="background">
-    <script type="text/javascript" src="scripts/main.js"></script>
+
     <header id="head">
-            <h1>Risolutore wordle</h1>
+            <h1>WordleSolver</h1>
     </header>
-    
-    <div id="conteiner">
-        <form>
+
+    <div id="container">
+        <form id="formArea">
             <div id="firstWord">
-                <marquee direction="left" scrollamount="7" width="100%" height="100%">
-                    <div>amore</div>
-                    <div>clamore</div>
-                    <div>lusso</div>
-                    <div>classe</div>
-                    <div>vita</div>
-                    <div>rock</div>            
+                <h2>Parole con cui iniziare...</h2>
+                <marquee id="initialWords" direction="left" scrollamount="6" width="100%" height="100%">
+
                 </marquee>
             </div>
-            <table >
+            <table>
                 <tr>
                     <td class="color green">Lettere verdi:</td>
-                    <td class="letter" ><input id="0" type="text" maxlength="1" autocomplete="off"></td> 
-                    <td class="letter" ><input id="1" type="text" maxlength="1" autocomplete="off"></td> 
-                    <td class="letter" ><input id="2" type="text" maxlength="1" autocomplete="off"></td> 
-                    <td class="letter" ><input id="3" type="text" maxlength="1" autocomplete="off"></td> 
-                    <td class="letter" ><input id="4" type="text" maxlength="1" autocomplete="off"></td> 
+                    <td class="letter" ><input id="greenCell-0" type="text" name="greenCell-0" maxlength="1" autocomplete="off"></td>
+                    <td class="letter" ><input id="greenCell-1" type="text" name="greenCell-1" maxlength="1" autocomplete="off"></td>
+                    <td class="letter" ><input id="greenCell-2" type="text" name="greenCell-2" maxlength="1" autocomplete="off"></td>
+                    <td class="letter" ><input id="greenCell-3" type="text" name="greenCell-3" maxlength="1" autocomplete="off"></td>
+                    <td class="letter" ><input id="greenCell-4" type="text" name="greenCell-4" maxlength="1" autocomplete="off"></td>
                 </tr>
                 <tr>
                     <td class="color yellow">Lettere gialle:</td>
-                    <td class="letter" ><input id="0" type="text" maxlength="1" autocomplete="off"></td> 
-                    <td class="letter" ><input id="1" type="text" maxlength="1" autocomplete="off"></td> 
-                    <td class="letter" ><input id="2" type="text" maxlength="1" autocomplete="off"></td> 
-                    <td class="letter" ><input id="3" type="text" maxlength="1" autocomplete="off"></td> 
-                    <td class="letter" ><input id="4" type="text" maxlength="1" autocomplete="off"></td> 
+                    <td class="letter" ><input id="yellowCell-0" type="text" name="yellowCell-0" maxlength="1" autocomplete="off"></td>
+                    <td class="letter" ><input id="yellowCell-1" type="text" name="yellowCell-1" maxlength="1" autocomplete="off"></td>
+                    <td class="letter" ><input id="yellowCell-2" type="text" name="yellowCell-2" maxlength="1" autocomplete="off"></td>
+                    <td class="letter" ><input id="yellowCell-3" type="text" name="yellowCell-3" maxlength="1" autocomplete="off"></td>
+                    <td class="letter" ><input id="yellowCell-4" type="text" name="yellowCell-4" maxlength="1" autocomplete="off"></td>
                 </tr>
                 <tr>
                     <td class="color grey">Lettere grigie:</td>
-                    <td class="letter" ><input id="0" type="text" maxlength="1" autocomplete="off"></td> 
-                    <td class="letter" ><input id="1" type="text" maxlength="1" autocomplete="off"></td> 
-                    <td class="letter" ><input id="2" type="text" maxlength="1" autocomplete="off"></td> 
-                    <td class="letter" ><input id="3" type="text" maxlength="1" autocomplete="off"></td> 
-                    <td class="letter" ><input id="4" type="text" maxlength="1" autocomplete="off"></td> 
+                    <td class="letter" ><input id="greyCell-0" type="text" name="greyCell-0" maxlength="1" autocomplete="off"></td>
+                    <td class="letter" ><input id="greyCell-1" type="text" name="greyCell-1" maxlength="1" autocomplete="off"></td>
+                    <td class="letter" ><input id="greyCell-2" type="text" name="greyCell-2" maxlength="1" autocomplete="off"></td>
+                    <td class="letter" ><input id="greyCell-3" type="text" name="greyCell-3" maxlength="1" autocomplete="off"></td>
+                    <td class="letter" ><input id="greyCell-4" type="text" name="greyCell-4" maxlength="1" autocomplete="off"></td>
                 </tr>
             </table>
             <div class="buttons">
-                <input class="button send" type="submit" value="Conferma ed invia">
+                <input class="button send" type="submit" value="Consigliami">
                 <input class="button reset" type="reset" value="Annulla"> <!--controlare che cancelli tutto il processo in backend-->
             </div>
-            <div class="suggestions">
-                <table>
-                    <tr><td>abcdf</tr></td>
-                    <tr><td>abcdf</tr></td>
-                    <tr><td>abcdf</tr></td>
-                    <tr><td>abcdf</tr></td>
-                    <tr><td>abcdf</tr></td>
-                    <tr><td>abcdf</tr></td>
-                    <tr><td>abcdf</tr></td>
-                    <tr><td>abcdf</tr></td>
-                    <tr><td>abcdf</tr></td>
-                    <tr><td>abcdf</tr></td>
-                    <tr><td>abcdf</tr></td>
-                    <tr><td>abcdf</tr></td>
-                    <tr><td>abcdf</tr></td>
-                    <tr><td>abcdf</tr></td>
-                    <tr><td>abcdf</tr></td>
-                    <tr><td>abcdf</tr></td>
-                    <tr><td>abcdf</tr></td>
-                    <tr><td>abcdf</tr></td>
-                    <tr><td>abcdf</tr></td>
-                    <tr><td>abcdf</tr></td>
-                    <tr><td>abcdf</tr></td>
-                    <tr><td>abcdf</tr></td>
-                    <tr><td>abcdf</tr></td>
-                    <tr><td>abcdf</tr></td>
-                    <tr><td>abcdf</tr></td>
-                </table>
-            </div>
+
         </form>
 
+
+            <div id="suggestions">
+                <h2>Parole suggerite</h2>
+                <table>
+                    <tr><td>word1</td></tr>
+                    <tr><td>word2</td></tr>
+                    <tr><td>word3</td></tr>
+                    <tr><td>word4</td></tr>
+                    <tr><td>word5</td></tr>
+                    <tr><td>word6</td></tr>
+                    <tr><td>word7</td></tr>
+                    <tr><td>word8</td></tr>
+                    <tr><td>word9</td></tr>
+                </table>
+            </div>
+
+
     </div>
 
-    <div id="footer">
-        <p>Develop by DatUS</p>
-        <p>Partecipanti:</p>
-        <a href="DatUs-solver@DatUs.org">E-mail per contattarci</a><p></p><!--email of DatUs-->
-    </div>
+    <footer>
+        <div>
+        <p>Developed by DatUS</p>
+        </div>
+    </footer>
 
+
+    <script type="text/javascript" src="scripts/main.js"></script>
 </body>
 
 </html>

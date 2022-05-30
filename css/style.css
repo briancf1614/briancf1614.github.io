@@ -1,12 +1,11 @@
 
-#footer {
-    font-size: 120%;
-	width:max-content;
-    color: white;
-	height: 36px;
-	background-color: rgba(0, 0, 0, 0);
-    float: right;
-    clear: both;
+footer {
+    width: 100vw;
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    margin-top: 20px;
 }
 
 div#firstWord {
@@ -30,7 +29,7 @@ marquee div:nth-child(-n+7){
     
 }
 
-#conteiner {
+#container {
     width: max-content;
     height: max-content;
     border-radius:5em;
@@ -92,16 +91,21 @@ input.reset {
     margin: 0 auto;
 }
 
-div.suggestions table {
-    font-size:1400%;
+div#suggestions table {
+    font-size:20pt;
     text-align: center;
     color: rgb(255, 255, 255);
     margin: 0 auto;
 }
-div.suggestions {
+div#suggestions {
+    display: none;
     margin-top: 10%;
     overflow-y: scroll;
-    height:60em;
+    height: 200px;
+}
+
+h2{
+    color: white;
 }
 
 
