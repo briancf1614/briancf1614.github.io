@@ -1,112 +1,129 @@
-
-footer {
-    width: 100vw;
-    text-align: center;
-    background-color: white;
-    color: black;
-    padding: 5px;
-    margin-top: 20px;
-}
-
-div#firstWord {
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 10%;
-}
-
-marquee div:nth-child(-n+7){
-    margin-right: 15%;
-    display:inline-block;
-    color:rgb(255, 255, 255);
-    font-size: 250%;
-}
-
-#head {
-    font-size: 300%;
+body{
+    height: calc(100vh - 100px);
     color: white;
-    text-align: center;
-    
 }
 
-#container {
-    width: max-content;
-    height: max-content;
-    border-radius:5em;
-	margin: 0 auto; /* per azzerare */
-	padding: 5%; /* per azzerare */
-    background-color: rgb(54, 54, 54);
-    border: 5px;
+body > div{
+    height: 100%;
 }
 
-#background {
-    background-color: rgb(27, 27, 27);
+.navbar-brand, .navbar-brand:hover{
+    color: white;
 }
 
-.letter input {
-    width: 2em;
-    height: 2em;
+#openerImg{
+    width: 30vw;
+}
+
+
+.letter input{
+    width: 1.5em;
+    height: 1.5em;
     text-align: center;
     background-color:rgba(0, 0, 0, 0);
-    color: #fff;
     border: solid rgb(192, 192, 192);
     font-size: 2em;
     text-transform: uppercase;
-    margin:auto;
-}
-
-table tr td.color {
-    font-size: 300%;
-    
-}
-.color.green {
-    color: rgb(67, 117, 67);
-}
-.color.yellow {
-    color: rgb(192, 192, 100);
-}
-.color.grey {
-    color: grey;
-}
-
-.buttons {
-    margin-top: 10%;
-    text-align: center;
-}
-input.button {
-    margin: 2%;
-    border: solid rgb(192, 192, 192) 5px;
-    font-size: 3em;
-}
-input.send {
-    padding: 1%;
-    background: rgb(67, 117, 67);
-
-}
-
-input.reset {
-    
-    padding: 1%;
-    background: rgb(223, 94, 94);
-    margin: 0 auto;
-}
-
-div#suggestions table {
-    font-size:20pt;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    margin: 0 auto;
-}
-div#suggestions {
-    display: none;
-    margin-top: 10%;
-    overflow-y: scroll;
-    height: 200px;
-}
-
-h2{
     color: white;
 }
 
+.color.green {
+    color: rgb(67, 117, 67);
+    font-size: small;
+}
+.color.yellow {
+    color: rgb(192, 192, 100);
+    font-size: small;
+}
+.color.grey {
+    color: grey;
+    font-size: small;
+}
+
+#mainArea{
+    border-radius:20px;
+    margin: 10px auto; /* per azzerare */
+    padding: 10px; /* per azzerare */
+    background-color: rgb(54, 54, 54);
+    border: 5px;
+    min-height: 100%;
+}
+
+#configArea{
+    display: block;
+}
+
+#goToSolverBtn{
+    margin: 20px;
+}
+
+#initArea{
+    display: none;
+}
+
+#formArea{
+  display: none;
+}
+
+#wordleTable{
+    margin: 10px;
+}
+
+#suggestions{
+    margin-top: auto;
+    display: none;
+    height: 50vh;
+    overflow: scroll;
+}
 
 
+body{
+    background-image: url("https://i.gifer.com/J4o.gif");
+    
+    
+}
+
+h2 {
+    color: white;
+}
+
+.slider {
+    height: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.text {
+    font-size:26px;
+    display: inline-block;
+    -webkit-animation: slide-left 6s linear infinite ;
+    animation: slide-left 6s linear infinite ;
+    color: white;
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(200%);
+        transform: translateX(200%);
+    }
+    100% {
+        -webkit-transform: translateX(-200%);
+        transform: translateX(-200%);
+    }
+}
+@keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(200%);
+        transform: translateX(200%);
+    }
+    100% {
+        -webkit-transform: translateX(-200%);
+        transform: translateX(-200%);
+    }
+}
+
+
+footer{
+    height: 100px;
+    color: white;
+}
