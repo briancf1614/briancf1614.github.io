@@ -1,7 +1,11 @@
-function redirigirPagina1() {
-    window.location.href = "pagina1.html";
-}
+document.addEventListener('DOMContentLoaded', () => {
+    const toggle = document.getElementById('theme-toggle');
+    const body = document.body;
+    const stored = localStorage.getItem('theme');
+    if (stored === 'dark') body.classList.add('dark');
 
-function redirigirPagina2() {
-    window.location.href = "pagina2.html";
-}
+    toggle.addEventListener('click', () => {
+        body.classList.toggle('dark');
+        localStorage.setItem('theme', body.classList.contains('dark') ? 'dark' : 'light');
+    });
+});
