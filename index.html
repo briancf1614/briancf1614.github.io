@@ -1,13 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>Supersito Premium</title>
 </head>
 <body>
-    <h1>Mi Sitio Web</h1>
-    <button onclick="redirigirPagina1()">Ir a Página 1</button>
-    <button onclick="redirigirPagina2()">Ir a Página 2</button>
+    <header>
+        <div class="logo">Supersito</div>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#about">Chi Sono</a>
+            <a href="#projects">Progetti</a>
+            <a href="#contact">Contatto</a>
+        </nav>
+        <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </header>
 
-    <script src="js/script.js"></script>
+    <section id="hero">
+        <h1>Benvenuti nel mio supersito</h1>
+        <p>Un luogo dove creatività e codice si incontrano per progetti straordinari.</p>
+    </section>
+
+    <section id="about">
+        <div class="content">
+            <img src="https://picsum.photos/200" alt="Foto Profilo">
+            <h2>Chi sono</h2>
+            <p>Sono uno sviluppatore appassionato di tecnologie web e design moderno. Mi piace sperimentare con nuove idee e trasformarle in soluzioni reali e funzionali.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 style="text-align:center;">Progetti</h2>
+        <div class="project-grid">
+            <div class="project">
+                <img src="https://picsum.photos/400/200?random=1" alt="Progetto 1">
+                <h3>Progetto Incredibile</h3>
+                <p>Un'applicazione web che sfrutta le API moderne per offrire un'esperienza utente mozzafiato.</p>
+            </div>
+            <div class="project">
+                <img src="https://picsum.photos/400/200?random=2" alt="Progetto 2">
+                <h3>Design d'Avanguardia</h3>
+                <p>Interfacce studiate nei minimi dettagli, con animazioni fluide e responsive.</p>
+            </div>
+            <div class="project">
+                <img src="https://picsum.photos/400/200?random=3" alt="Progetto 3">
+                <h3>Soluzioni Intelligenti</h3>
+                <p>Automatizzazioni e tool personalizzati per ottimizzare ogni flusso di lavoro.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 style="text-align:center;">Contattami</h2>
+        <form>
+            <input type="text" placeholder="Nome" required>
+            <input type="email" placeholder="Email" required>
+            <textarea rows="5" placeholder="Messaggio" required></textarea>
+            <button type="submit">Invia</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; <span id="year"></span> Supersito. Tutti i diritti riservati.
+    </footer>
+
+    <script>
+        // aggiorna anno nel footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
